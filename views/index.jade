@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  p xss is #{{xss}}
+  <!-- p http://localhost:3000/?xss=<img src="null" onerror="alert(1)"/> -->
